@@ -9,18 +9,18 @@
 #### 查询镜像
 
 如果需要tag，只能去官网查：[https://hub.docker.com/](https://hub.docker.com/)
-```info
-docker  search  [REPOSITORY]
+```shell
+docker search [REPOSITORY]
 ```
 
 #### 拉取镜像
-```info
-docker  pull  [repository]:[tag]
+```shell
+docker pull [repository]:[tag]
 ```
 
 #### 查看镜像
-```info
-docker  images  ls
+```shell
+docker images ls
 ```
 
 build：从Dockerfile创建
@@ -28,21 +28,21 @@ build：从Dockerfile创建
 push
 
 #### 删除镜像
-```info
-docker  rmi  [image id]
+```shell
+docker rmi [image_id]
 ```
 
 ## 容器命令
 
-#### 创建容器
-start：启动已存在容器
-```info
-docker  start  [container id]
+#### 启动容器
+启动已存在容器
+```shell
+docker start [container_id]
 ```
 
 #### 创建并启动
 run = create + start 创建并启动
-```info
+```shell
 docker run  ` 
 -d ` 后台运行
 --restart=always ` docker启动时自动重启容器
@@ -58,25 +58,25 @@ kibana:7.8.0 ` 使用的镜像
 ```
 
 #### 进入容器
-```info
-docker exec -it [container id] bash
+```shell
+docker exec -it [container_id] bash
 ```
 
 #### 重启容器
-```info
-docker  restart  [container id]
+```shell
+docker restart [container_id]
 ```
 
 #### 停止容器
-```info
-docker  stop  [container id/name] # 优雅停止
-docker  kill  [container id/name] # 强制停止
+```shell
+docker stop [container_id/name] # 优雅停止
+docker kill [container_id/name] # 强制停止
 ```
 
 #### 删除容器
 需要先停止容器
-```info
-docker  rm  [container id/name]
+```shell
+docker rm [container_id/name]
 ```
 
 ## network
@@ -89,7 +89,7 @@ docker  rm  [container id/name]
 
 #### 查看所有network
 
-```info
+```shell
 docker network ls
 ----------------------------------------
 NETWORK ID     NAME      DRIVER    SCOPE
@@ -97,7 +97,7 @@ NETWORK ID     NAME      DRIVER    SCOPE
 ```
 
 #### 创建桥接网络
-```info
+```shell
 docker  network  create  [网络名称]
 docker network create com.whr
 ```
@@ -105,7 +105,7 @@ docker network create com.whr
 #### 创建容器并指定网络
 
 添加 --net 参数
-```info
+```shell
 docker run -d `
 --name elasticsearch `
 --net com.whr `

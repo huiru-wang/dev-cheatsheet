@@ -11,6 +11,7 @@ export default defineConfig({
       { text: 'MySQL', link: '/MySQL/常用SQL' },
       { text: 'Java', link: '/Java/JVM定位常用方法' },
       { text: 'Middleware', link: '/Middleware/Kafka相关命令' },
+      { text: 'Linux', link: '/Linux/文件相关' },
       { text: 'DevTools', link: '/DevTools/Vim' },
       { text: 'Leetcode', link: '/Leetcode/字符串' },
     ],
@@ -38,20 +39,12 @@ export default defineConfig({
         ],
         collapsed: true,
       },
+
       {
-        text: 'Leetcode',
+        text: 'Linux',
         items: [
-          { text: '字符串', link: '/Leetcode/字符串' },
-          { text: '数组', link: '/Leetcode/数组' },
-          { text: '链表', link: '/Leetcode/链表' },
-          { text: '树', link: '/Leetcode/树' },
-        ],
-        collapsed: true,
-      },
-      {
-        text: 'DevTools',
-        items: [
-          { text: 'Vim', link: '/DevTools/Vim' },
+          { text: '文件相关', link: '/Linux/文件相关' },
+          { text: '进程相关', link: '/Linux/进程相关' },
         ],
         collapsed: true,
       },
@@ -65,12 +58,29 @@ export default defineConfig({
         collapsed: true,
       },
       {
+        text: 'DevTools',
+        items: [
+          { text: 'Vim', link: '/DevTools/Vim' },
+        ],
+        collapsed: true,
+      },
+      {
         text: 'Container',
         items: [
           { text: 'Docker常用命令', link: '/Container/Docker常用命令' },
           { text: 'Dockerrfile', link: '/Container/Dockerrfile' },
           { text: '常用镜像', link: '/Container/常用镜像' },
           { text: 'Docker Compose', link: '/Container/Docker Compose' }
+        ],
+        collapsed: true,
+      },
+      {
+        text: 'Leetcode',
+        items: [
+          { text: '字符串', link: '/Leetcode/字符串' },
+          { text: '数组', link: '/Leetcode/数组' },
+          { text: '链表', link: '/Leetcode/链表' },
+          { text: '树', link: '/Leetcode/树' },
         ],
         collapsed: true,
       },

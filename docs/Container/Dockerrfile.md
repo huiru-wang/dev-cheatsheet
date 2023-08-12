@@ -3,25 +3,27 @@
 DockerFile：定制化的镜像描述文件
 
 ## 常用Dockerfile指令：
-- `FROM`：指定基础镜像，例如FROM ubuntu:latest。
+- `FROM`：指定基础镜像 `FROM ubuntu:latest`
 
-- `RUN`：在镜像中执行命令，例如RUN apt-get update && apt-get install -y curl。
+- `RUN`：在镜像中执行命令 `RUN apt-get update && apt-get install -y curl`
 
-- `COPY`：将文件或目录从主机复制到镜像中，例如COPY app.py /app/。
+- `COPY`：将文件或目录从主机复制到镜像中，`COPY app.py /app/`
 
-- `ADD`：类似于COPY指令，但还可以从URL或归档文件中添加文件，例如ADD http://example.com/big.tar.gz /opt/。
+- `ADD`：类似于COPY指令，但还可以从URL或归档文件中添加文件 
+  
+  `ADD http://example.com/big.tar.gz /opt/`
 
-- `WORKDIR`：设置工作目录，例如WORKDIR /app/。
+- `WORKDIR`：设置工作目录 `WORKDIR /app/`
 
-- `EXPOSE`：声明容器将使用哪些端口，例如EXPOSE 80。
+- `EXPOSE`：声明容器将使用哪些端口 `EXPOSE 80`
 
-- `CMD`：指定默认的容器启动命令和参数，例如CMD ["python", "app.py"]。
+- `CMD`：指定默认的容器启动命令和参数 `CMD ["python", "app.py"]`
 
-- `ENTRYPOINT`：指定容器启动时要运行的命令，例如ENTRYPOINT ["python", "app.py"]。
+- `ENTRYPOINT`：指定容器启动时要运行的命令 `ENTRYPOINT ["python", "app.py"]`
 
-- `ENV`：设置环境变量，例如ENV MY_VAR="my_value"。
+- `ENV`：设置环境变量 `ENV MY_VAR="my_value"`
 
-- `ARG`：定义构建时传递给镜像的参数，例如ARG VERSION。
+- `ARG`：定义构建时传递给镜像的参数 `ARG VERSION`
 
 ## 发布个人服务到容器
 ### 1、创建Dockerfile
