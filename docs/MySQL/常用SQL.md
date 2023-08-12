@@ -5,24 +5,24 @@
 
 ### 新增/删除列
 ```sql
-alert [table_name] add [column_name] varchar(255) default null comment '';
-alert [table_name] drop [column_name];
+ALTER [table_name] ADD [column_name] VARCHAR(255) DEFAULT NULL comment '';
+ALTER [table_name] DROP [column_name];
 ```
 
 ### 修改列
 ```sql
-alert [table_name] modify [column_name] default [value];
+ALTER [table_name] MODIFY [column_name] DEFAULT [value];
 ```
 
 ### 修改列的默认值
 会复制表，效率比较低：
 ```sql
-alert [table_name] modify [column_name] default [value];
+ALTER [table_name] MODIFY [column_name] DEFAULT [value];
 ```
 
 直接修改.frm文件中的列定义，效率高：
 ```sql
-alert [table_name] alter [column_name] set default [value];
+ALTER [table_name] ALTER [column_name] SET DEFAULT [value];
 ```
 
 ## 索引

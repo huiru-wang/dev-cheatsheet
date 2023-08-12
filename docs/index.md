@@ -3,24 +3,38 @@
 layout: home
 
 hero:
-  name: "huiru-blog"
-  text: "code life"
-  tagline: My great project tagline
+  name: ""
+  text: ""
+  tagline: Coding Tools
+  image:
+    src: /d.jpg
+    alt: VitePress
   actions:
     - theme: brand
       text: MySQL
-      link: /MySQL/索引相关语法
+      link: /MySQL/常用SQL
     - theme: alt
       text: Linux
       link: /api-examples
-
+    - theme: alt
+      text: Java
+      link: /Java/JVM定位常用方法
 features:
-  - icon: 👋️
+  - icon: 🛠️
     title: Simple and minimal, always
-    details: Lorem ipsum...
-  - icon:
-      src: /logo.svg
-    title: Another cool feature
-    details: Lorem ipsum...
+    link: /Java/JVM定位常用方法
+  - icon: 🛠️
+    title: Simple and minimal, always
+    link: /Java/JVM定位常用方法
+  - icon: 🛠️
+    title: Simple and minimal, always
+    link: /Java/JVM定位常用方法
+  - icon: 🛠️
+    title: Simple and minimal, always
+    link: /Java/JVM定位常用方法
+  - icon: 🛠️
+    title: Simple and minimal, always
+    link: /Java/JVM定位常用方法
+    rel: 
 ---
 

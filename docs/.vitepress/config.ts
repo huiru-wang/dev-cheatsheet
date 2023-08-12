@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "huiru-blog",
+  title: "huiru",
   description: "code life",
   themeConfig: {
     logo: "/logo.svg",
@@ -17,6 +17,8 @@ export default defineConfig({
     outline: [2, 4],
     outlineTitle: 'On this page',
     aside: true,
+    returnToTopLabel: 'Return to top',
+    externalLinkIcon: true,
     sidebar: [
       {
         text: 'MySQL',
@@ -31,8 +33,8 @@ export default defineConfig({
       {
         text: 'Java',
         items: [
-          { text: 'Spring事务使用', link: '/Java/Spring事务使用' },
           { text: 'JVM定位常用方法', link: '/Java/JVM定位常用方法' },
+          { text: 'Spring事务使用', link: '/Java/Spring事务使用' },
         ],
         collapsed: true,
       },

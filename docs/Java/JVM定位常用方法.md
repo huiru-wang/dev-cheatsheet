@@ -26,7 +26,7 @@ jstack [tid]
 ## 查看堆区活跃大对象
 
 ```shell
-jmap -histo:live [pid] | head -n 9
+jmap -histo:live [PID] | head -n 9
 
  num     #instances         #bytes  class name (module)
 -------------------------------------------------------
@@ -46,8 +46,8 @@ jmap -histo:live [pid] | head -n 9
 ### 生成dump文件
 
 ```shell
-jmap -dump:format=b,file=[filename] [pid]
-jmap -dump:live,format=b,file=[filename] [pid]
+jmap -dump:format=b,file=[filename] [PID]
+jmap -dump:live,format=b,file=[filename] [PID]
 
 -------------------------------------------------------
 Dumping heap to /data/live.hprof ...
@@ -55,11 +55,15 @@ Heap dump file created [62829011 bytes in 0.268 secs]
 ```
 - `live`：只dump存活对象；
 - `filename`：dump文件名，一般为：`xxx.hprof`
-- `pid`：Java进程Id；
+- `PID`：Java进程Id；
 
 ### 分析堆内存
 
 有多种dump分析工具：jvisualvm、eclipse memory analyzer等；
 
 
+## 动态修改JVM参数
+```shell
+jinfo -flag +PrintGCDetails [PID]
+```
 

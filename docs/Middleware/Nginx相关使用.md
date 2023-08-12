@@ -149,3 +149,5 @@ location /example {
 # 全局配置中加入相对路径引入
 include server1.conf;
 ```
+
+/opt/blog/docs/.vitepress/dist
