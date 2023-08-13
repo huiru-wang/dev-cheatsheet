@@ -1,0 +1,60 @@
+/* 加粗 */
+strong {
+    color: hsl(20, 47%, 53%)
+}
+
+/* read mode */
+.main> {
+    h1 {
+        color: #9e4c72 !important;
+    }
+
+    h2 {
+        color: #8554a5 !important;
+    }
+
+    h3 {
+        color: #625da8 !important;
+    }
+
+    h4 {
+        color: #437eaf !important;
+    }
+
+    h5 {
+        color: #65b9b5 !important;
+    }
+
+    /* link */
+    .cm-underline {
+        color: #437dc5;
+    }
+
+    a {
+        color: #437dc5 !important;
+    }
+
+    /* ==highlight== */
+    mark {
+        background-color: transparent !important;
+        color: #824ec7 !important;
+    }
+
+    /* 行内代码 */
+
+    code {
+        color: #cc8739 !important;
+    }
+
+    blockquote {
+        background-color: #abb9bf;
+    }
+
+    /* 加粗 */
+    strong {
+        color: hsl(20, 47%, 53%)
+    }
+
+    /* 列表 */
+
+}

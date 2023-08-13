@@ -1,28 +1,27 @@
 import { defineConfig } from 'vitepress'
 import nav from './nav';
 import sidebar from './sidebar';
+import markdownItKatex from 'markdown-it-katex';
+import vue from './vue';
+import './theme/custom.css'
 
-// https://vitepress.dev/reference/site-config
 export default defineConfig({
   title: "Dev Cheatsheet",
-  dir: '',
   description: "code life",
   markdown: {
     config: (md) => {
-      md.set({ html: true });
-      //md.use(require("markdown-it-katex"));
-    }
+      md.use(markdownItKatex);
+    },
   },
   themeConfig: {
     logo: "/logo.svg",
-    // https://vitepress.dev/reference/default-theme-config
     nav,
+    sidebar,
     outline: [2, 4],
     outlineTitle: 'On this page',
     aside: true,
     returnToTopLabel: 'Return to top',
     externalLinkIcon: true,
-    sidebar,
     darkModeSwitchLabel: 'Appearance',
     search: {
       provider: 'local',
@@ -40,6 +39,8 @@ export default defineConfig({
     ]
   },
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }]
+    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'stylesheet', href: 'https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css', crossorigin: '' }]
   ],
+  vue
 })
