@@ -3,6 +3,11 @@ strong {
     color: hsl(20, 47%, 53%)
 }
 
+.VPFeature {
+    color: #6a4bc0;
+
+}
+
 /* read mode */
 .main> {
     h1 {

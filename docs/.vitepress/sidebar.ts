@@ -60,7 +60,12 @@ export default [
             { text: '字符串', link: '/Leetcode/字符串' },
             { text: '数组', link: '/Leetcode/数组' },
             { text: '链表', link: '/Leetcode/链表' },
-            { text: '树', link: '/Leetcode/树' },
+            {
+                text: '树', items: [
+                    { text: '树结构', link: '/Leetcode/树/树结构' },
+                    { text: '树相关算法', link: '/Leetcode/树/树相关算法' },
+                ]
+            },
             { text: '单调栈', link: '/Leetcode/单调栈' },
             { text: 'Graph', link: '/Leetcode/Graph' },
         ],

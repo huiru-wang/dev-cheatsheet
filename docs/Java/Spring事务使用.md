@@ -4,7 +4,7 @@
 
 SpringBoot不需要任何配置，直接使用@Transaction即可，如果要使用全局事务管理器，则需要自行配置
 
-Spring中使用方式有以下几种
+Spring中使用需要额外配置，方式有以下几种
 
 ### 1. 注解配置
 
@@ -24,7 +24,7 @@ public DataSourceTransactionManager txManager(@Autowired HikariDataSource hikari
 </bean>
 ```
 
-## 使用
+## Spring中使用事务
 
 ### 1. 全局事务管理
 
@@ -49,7 +49,7 @@ public DataSourceTransactionManager txManager(@Autowired HikariDataSource hikari
 </aop:config>
 ```
 
-### 2. 使用`@Transaction`
+### 2. `@Transaction`注解
 - SpringBoot中无需任何配置，直接可以使用@Transaction
 - Spring中需要开启；
 ```java
@@ -83,15 +83,16 @@ public void test() {
     }
 }
 ```
-### 4. 注意事项
+## 失效注意事项
 1、事务方法必须`public`
 
-2、this调用一个事务方法，AOP不生效，此事务失效；
+2、必须能够使用到代理对象；如this调用一个事务方法，AOP不生效；
 
 ## 事务传播
 
 目的：当出现多个事务嵌套时，如何组织各个事务的行为；
 
+用例：[事务传播用例](https://github.com/huiru-wang/code-snippet/blob/main/SpringTransaction/src/main/java/com/snippet/springtransaction/service/UserService.java)
 
 `PROPAGATION_REQUIRED`：共用一个事务，如果没有事务，就开启一个新的；
 

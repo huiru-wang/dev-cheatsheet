@@ -3,10 +3,11 @@ import nav from './nav';
 import sidebar from './sidebar';
 import markdownItKatex from 'markdown-it-katex';
 import vue from './vue';
-import './theme/custom.css'
+import './theme/custom.css';
 
 export default defineConfig({
   title: "Dev Cheatsheet",
+  titleTemplate: "Huiru",
   description: "code life",
   markdown: {
     config: (md) => {
