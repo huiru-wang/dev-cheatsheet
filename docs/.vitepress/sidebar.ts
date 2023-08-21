@@ -17,7 +17,34 @@ export default [
         ],
         collapsed: true,
     },
+    {
+        text: 'Frontend',
+        items: [
+            {
+                text: 'JavaScript', items: [
+                    { text: 'String', link: '/Frontend/JavaScript/String' },
+                    { text: 'Function', link: '/Frontend/JavaScript/Function' },
+                    { text: 'Collection', link: '/Frontend/JavaScript/Collection' }
+                ]
+            },
+            {
+                text: 'CSS', items: [
 
+                ]
+            },
+            {
+                text: 'TypeScript', items: [
+
+                ]
+            },
+            {
+                text: 'React', items: [
+
+                ]
+            },
+        ],
+        collapsed: true,
+    },
     {
         text: 'Linux',
         items: [
