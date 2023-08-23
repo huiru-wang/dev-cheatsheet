@@ -5,6 +5,7 @@ export default [
             { text: '常用SQL', link: '/MySQL/常用SQL' },
             { text: '窗口函数', link: '/MySQL/窗口函数' },
             { text: '日期函数', link: '/MySQL/日期函数' },
+            { text: '分组统计', link: '/MySQL/分组统计' },
             { text: 'MyBatis常用模板', link: '/MySQL/MyBatis常用模板' }
         ],
         collapsed: true,
