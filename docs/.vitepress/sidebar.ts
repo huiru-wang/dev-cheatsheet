@@ -85,8 +85,9 @@ export default [
         items: [
             { text: '刷刷刷', link: '/Leetcode/刷刷刷' },
             { text: '复杂度计算', link: '/Leetcode/复杂度计算' },
-            { text: '字符串', link: '/Leetcode/字符串' },
+            { text: '位运算', link: '/Leetcode/位运算' },
             { text: '数组', link: '/Leetcode/数组' },
+            { text: '字符串', link: '/Leetcode/字符串' },
             { text: '链表', link: '/Leetcode/链表' },
             {
                 text: '树', items: [
@@ -94,8 +95,10 @@ export default [
                     { text: '树相关算法', link: '/Leetcode/树/树相关算法' },
                 ]
             },
-            { text: '单调栈', link: '/Leetcode/单调栈' },
             { text: 'Graph', link: '/Leetcode/Graph' },
+            { text: '搜索算法', link: '/Leetcode/搜索算法' },
+            { text: '单调栈', link: '/Leetcode/单调栈' },
+
         ],
         collapsed: true,
     },
