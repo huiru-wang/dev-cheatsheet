@@ -1,5 +1,11 @@
 
-# MyBatis常用模板
+# 批量操作常用模板
+
+## 批量插入唯一索引
+- 遇到唯一索引重复，自动忽略
+```sql
+INSERT IGNORE INTO t_test () values ();
+```
 
 ## 批量插入存在则Replace
 ```sql
