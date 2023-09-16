@@ -1,8 +1,10 @@
 
 # Dockerfile
 DockerFile：定制化的镜像描述文件
+- 定制化；
+- 精简镜像大小；
 
-## 常用Dockerfile指令：
+## Dockerfile指令
 - `FROM`：指定基础镜像 `FROM ubuntu:latest`
 
 - `RUN`：在镜像中执行命令 `RUN apt-get update && apt-get install -y curl`
@@ -25,8 +27,7 @@ DockerFile：定制化的镜像描述文件
 
 - `ARG`：定义构建时传递给镜像的参数 `ARG VERSION`
 
-## 发布个人服务到容器
-### 1、创建Dockerfile
+## 创建Dockerfile
 ```dockerfile
 FROM golang:1.18.3
 
@@ -46,29 +47,24 @@ WORKDIR $WORKDIR
 # 容器启动时 在工作目录下执行命令
 ENTRYPOINT ["./main"]
 ```
-### 2、制作镜像
-```dockerfile
+
+## 构建镜像
+
+### 1. 从Dockerfile构建镜像
+```shell
+# 从path目录的Dockerfile或URL的Dockerfile创建镜像
+docker build [OPTIONS] [PATH / URL] 
+
 docker build -t whr/mess:v1 --rm=true .
 ```
-
+- `-t [IMAGE_NAME:VERSION]`：创建并指定镜像名和版本；
+- `-f /path/to/a/Dockerfile`：指定Dockerfile创建；
 - --rm：创建完成，删除中间镜像
 
-### 3、启动容器服务
-```bash
-docker run -d `
---name mess `
--e port=8080 `
--v /d/data/mess/gin_http0.log:/root/logs/gin_http.log `
--v /d/data/mess/application.yml:/root/config/application.yml `
---network com.whr --network-alias mess0 `
--p 8081:8080 `
-whr/mess:v1
-```
-```bash
-docker run -d `
---name mess0 `
--e port=8080 `
--v /d/data/mess/gin_http0.log:/root/logs/gin_http.log `
--p 8081:8080 `
-whr/mess
+### 2. 从已有容器构建镜像
+
+```shell
+docker commit -a [author] -m [description] [contaner_name/id] [REPOSITORY[:TAG]]
+
+docker commit -a "hr" -m "my images" 92e23f app:1.0.0
 ```

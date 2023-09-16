@@ -6,7 +6,7 @@ export default [
             { text: '窗口函数', link: '/MySQL/窗口函数' },
             { text: '日期函数', link: '/MySQL/日期函数' },
             { text: '分组统计', link: '/MySQL/分组统计' },
-            { text: 'MySQL批量操作', link: '/MySQL/批量操作' }
+            { text: '批量操作', link: '/MySQL/批量操作' }
         ],
         collapsed: true,
     },
@@ -73,7 +73,7 @@ export default [
     {
         text: 'Container',
         items: [
-            { text: 'Docker常用命令', link: '/Container/Docker常用命令' },
+            { text: '基础命令', link: '/Container/基础命令' },
             { text: 'Dockerrfile', link: '/Container/Dockerrfile' },
             { text: '常用镜像', link: '/Container/常用镜像' },
             { text: 'Docker Compose', link: '/Container/Docker Compose' }
