@@ -49,7 +49,8 @@ export default [
             },
             {
                 text: 'React', items: [
-
+                    { text: '数据驱动', link: '/Frontend/React/数据驱动' },
+                    { text: '函数组件Hook', link: '/Frontend/React/函数组件Hook' },
                 ]
             },
         ],
