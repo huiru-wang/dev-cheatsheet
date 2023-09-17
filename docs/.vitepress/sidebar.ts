@@ -11,10 +11,19 @@ export default [
         collapsed: true,
     },
     {
-        text: 'Java',
+        text: 'DevTools',
         items: [
-            { text: 'JVM定位常用方法', link: '/Java/JVM定位常用方法' },
-            { text: 'Spring事务使用', link: '/Java/Spring事务使用' },
+            { text: 'Linux文件相关命令', link: '/DevTools/文件相关' },
+            { text: 'Linux进程相关命令', link: '/DevTools/进程相关' },
+            { text: 'JVM问题定位', link: '/DevTools/JVM问题定位' },
+            { text: 'Vim', link: '/DevTools/Vim' },
+        ],
+        collapsed: true,
+    },
+    {
+        text: 'Spring',
+        items: [
+            { text: 'Spring事务使用', link: '/Spring/Spring事务使用' },
         ],
         collapsed: true,
     },
@@ -47,14 +56,6 @@ export default [
         collapsed: true,
     },
     {
-        text: 'Linux',
-        items: [
-            { text: '文件相关', link: '/Linux/文件相关' },
-            { text: '进程相关', link: '/Linux/进程相关' },
-        ],
-        collapsed: true,
-    },
-    {
         text: 'Middleware',
         items: [
             { text: 'Kafka相关命令', link: '/Middleware/Kafka相关命令' },
@@ -64,19 +65,23 @@ export default [
         collapsed: true,
     },
     {
-        text: 'DevTools',
+        text: 'Container',
         items: [
-            { text: 'Vim', link: '/DevTools/Vim' },
+            { text: '基础命令', link: '/Container/基础命令' },
+            { text: 'Dockerrfile', link: '/Container/Dockerfile' },
+            { text: '常用镜像', link: '/Container/常用镜像' },
+            { text: '容器编排', link: '/Container/容器编排' }
         ],
         collapsed: true,
     },
     {
-        text: 'Container',
+        text: 'Git',
         items: [
-            { text: '基础命令', link: '/Container/基础命令' },
-            { text: 'Dockerrfile', link: '/Container/Dockerrfile' },
-            { text: '常用镜像', link: '/Container/常用镜像' },
-            { text: 'Docker Compose', link: '/Container/Docker Compose' }
+            { text: 'gitconfig', link: '/Git/gitconfig' },
+            { text: '查看相关命令', link: '/Git/查看相关命令' },
+            { text: '分支相关命令', link: '/Git/分支相关命令' },
+            { text: '回退相关命令', link: '/Git/回退相关命令' },
+            { text: 'Rebase的使用', link: '/Git/Rebase的使用' }
         ],
         collapsed: true,
     },
@@ -99,17 +104,6 @@ export default [
             { text: '搜索算法', link: '/Leetcode/搜索算法' },
             { text: '单调栈', link: '/Leetcode/单调栈' },
 
-        ],
-        collapsed: true,
-    },
-    {
-        text: 'Git',
-        items: [
-            { text: 'gitconfig', link: '/Git/gitconfig' },
-            { text: '查看相关命令', link: '/Git/查看相关命令' },
-            { text: '分支相关命令', link: '/Git/分支相关命令' },
-            { text: '回退相关命令', link: '/Git/回退相关命令' },
-            { text: 'Rebase的使用', link: '/Git/Rebase的使用' }
         ],
         collapsed: true,
     },
