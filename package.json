@@ -2,7 +2,7 @@
   "devDependencies": {
     "markdown-it": "^13.0.1",
     "markdown-it-katex": "^2.0.3",
-    "vitepress": "^1.0.0-rc.4"
+    "vitepress": "^1.0.0-rc.20"
   },
   "type": "module",
   "scripts": {
