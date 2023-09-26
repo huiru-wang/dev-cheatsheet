@@ -1,1 +1,0 @@
-import{_ as s,o as a,c as p,Q as n}from"./chunks/framework.fd95ed2e.js";const _=JSON.parse('{"title":"","description":"","frontmatter":{},"headers":[],"relativePath":"Frontend/生态.md","filePath":"Frontend/生态.md"}'),o={name:"Frontend/生态.md"},e=n("",19),l=[e];function t(r,c,i,d,y,h){return a(),p("div",null,l)}const u=s(o,[["render",t]]);export{_ as __pageData,u as default};

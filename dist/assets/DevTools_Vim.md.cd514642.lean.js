@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.fd95ed2e.js";const C=JSON.parse('{"title":"Vim","description":"","frontmatter":{},"headers":[],"relativePath":"DevTools/Vim.md","filePath":"DevTools/Vim.md"}'),p={name:"DevTools/Vim.md"},o=l("",7),t=[o];function e(c,r,y,E,i,u){return n(),a("div",null,t)}const g=s(p,[["render",e]]);export{C as __pageData,g as default};

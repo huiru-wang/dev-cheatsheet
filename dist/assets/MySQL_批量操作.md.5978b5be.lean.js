@@ -1,1 +1,0 @@
-import{_ as s,o as n,c as a,Q as l}from"./chunks/framework.fd95ed2e.js";const d=JSON.parse('{"title":"批量操作常用模板","description":"","frontmatter":{},"headers":[],"relativePath":"MySQL/批量操作.md","filePath":"MySQL/批量操作.md"}'),p={name:"MySQL/批量操作.md"},o=l("",14),t=[o];function e(c,r,E,y,i,F){return n(),a("div",null,t)}const q=s(p,[["render",e]]);export{d as __pageData,q as default};
