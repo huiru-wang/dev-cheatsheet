@@ -13,8 +13,9 @@ export default [
     {
         text: 'DevTools',
         items: [
-            { text: 'Linux文件相关命令', link: '/DevTools/文件相关' },
-            { text: 'Linux进程相关命令', link: '/DevTools/进程相关' },
+            { text: 'Linux日志查询相关', link: '/DevTools/Linux日志查询相关' },
+            { text: 'Linux进程相关命令', link: '/DevTools/Linux进程相关命令' },
+            { text: 'Curl', link: '/DevTools/Curl' },
             { text: 'JVM问题定位', link: '/DevTools/JVM问题定位' },
             { text: 'Vim', link: '/DevTools/Vim' },
         ],
@@ -36,23 +37,27 @@ export default [
                     { text: 'String', link: '/Frontend/JavaScript/String' },
                     { text: 'Function', link: '/Frontend/JavaScript/Function' },
                     { text: 'Collection', link: '/Frontend/JavaScript/Collection' }
-                ]
+                ],
+                collapsed: true,
             },
             {
                 text: 'CSS', items: [
 
-                ]
+                ],
+                collapsed: true,
             },
             {
                 text: 'TypeScript', items: [
 
-                ]
+                ],
+                collapsed: true,
             },
             {
                 text: 'React', items: [
                     { text: '数据驱动', link: '/Frontend/React/数据驱动' },
                     { text: '函数组件Hook', link: '/Frontend/React/函数组件Hook' },
-                ]
+                ],
+                collapsed: true,
             },
         ],
         collapsed: true,
@@ -100,7 +105,8 @@ export default [
                 text: '树', items: [
                     { text: '树结构', link: '/Leetcode/树/树结构' },
                     { text: '树相关算法', link: '/Leetcode/树/树相关算法' },
-                ]
+                ],
+                collapsed: true,
             },
             { text: 'Graph', link: '/Leetcode/Graph' },
             { text: '搜索算法', link: '/Leetcode/搜索算法' },
@@ -124,13 +130,15 @@ export default [
                     { text: '比较型', link: '/IELTS/大作文/比较型' },
                     { text: '报告型', link: '/IELTS/大作文/报告型' },
                     { text: '混搭型', link: '/IELTS/大作文/混搭型' },
-                ]
+                ],
+                collapsed: true,
             },
             {
                 text: '小作文', items: [
                     { text: '整体结构', link: '/IELTS/大作文/整体结构' },
                     { text: '论点分解方法', link: '/IELTS/大作文/论点分解方法' }
-                ]
+                ],
+                collapsed: true,
             }
         ],
         collapsed: true,
