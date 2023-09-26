@@ -1,5 +1,3 @@
-
-
 ## 模板字符串
 
 ```javascript
@@ -54,8 +52,11 @@ console.log(string.search(/javascript/gi))  // 7
 ```
 
 ## String转数字
+
 通用方法
+
 - Number()
+
 - Plus sign(+)
 
 ```javascript
@@ -73,6 +74,5 @@ let numInt = parseInt(num)  // 10
 let num = '9.81'
 let numFloat = parseFloat(num)  // 9.81
 ```
-
 
 ## 正则
