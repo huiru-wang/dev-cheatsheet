@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.fd95ed2e.js";const u=JSON.parse('{"title":"链表","description":"","frontmatter":{},"headers":[],"relativePath":"Leetcode/链表.md","filePath":"Leetcode/链表.md"}'),p={name:"Leetcode/链表.md"},o=l("",7),e=[o];function c(t,r,E,y,i,d){return a(),n("div",null,e)}const F=s(p,[["render",c]]);export{u as __pageData,F as default};

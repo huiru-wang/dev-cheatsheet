@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as l}from"./chunks/framework.fd95ed2e.js";const F=JSON.parse('{"title":"MySQL日期函数","description":"","frontmatter":{},"headers":[],"relativePath":"MySQL/日期函数.md","filePath":"MySQL/日期函数.md"}'),p={name:"MySQL/日期函数.md"},o=l("",6),e=[o];function t(c,r,E,y,i,d){return a(),n("div",null,e)}const h=s(p,[["render",t]]);export{F as __pageData,h as default};

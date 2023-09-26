@@ -1,0 +1,1 @@
+import{_ as s,o as a,c as n,Q as e}from"./chunks/framework.fd95ed2e.js";const m=JSON.parse('{"title":"curl","description":"","frontmatter":{},"headers":[],"relativePath":"DevTools/Curl.md","filePath":"DevTools/Curl.md"}'),l={name:"DevTools/Curl.md"},o=e("",7),t=[o];function p(c,r,i,y,d,_){return a(),n("div",null,t)}const E=s(l,[["render",p]]);export{m as __pageData,E as default};

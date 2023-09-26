@@ -1,0 +1,1 @@
+import{_ as e,o as t,c as o,Q as i}from"./chunks/framework.fd95ed2e.js";const u=JSON.parse('{"title":"回退相关命令","description":"","frontmatter":{},"headers":[],"relativePath":"Git/回退相关命令.md","filePath":"Git/回退相关命令.md"}'),c={name:"Git/回退相关命令.md"},a=i("",40),d=[a];function r(m,l,p,s,n,h){return t(),o("div",null,d)}const _=e(c,[["render",r]]);export{u as __pageData,_ as default};
