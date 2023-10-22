@@ -1,4 +1,8 @@
 
+# Postman
+
+[Postman-Doc](https://postman.xiniushu.com/docs/writing-scripts/intro-to-scripts)
+
 ![Untitled](/images/postman.png)
 
 ## Test script
@@ -17,4 +21,3 @@ var res = JSON.parse(responseBody);
 var token = res.token;
 pm.environment.set("Token", token);
 ```
-
