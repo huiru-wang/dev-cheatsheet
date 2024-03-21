@@ -112,6 +112,19 @@ cat access.log | sort -o temp.log
 grep -o '"text":"[^"]*"' t.log | awk -F ':"' '{print $2}' | awk -F '"' '{print $1}' | awk '{print length,
  $0}' | sort -n -k 1
 
+
+
+## 常用组合
+### 指定时间范围、查ERROR前后日志
+```shell
+grep '2024-03-21 12:5[5-8]' text.txt| grep ERROR -C 10
+```
+
+
+
+
+
+
 ------------------------------------------------------------------------------------
 5 33131
 7 lighers
